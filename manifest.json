@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "Azure DevOps Copy Paths",
+    "version": "0.1",
+    "default_locale": "en",
+    "description": "Helps to copy names of branches/files from PR page.",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://*visualstudio.com/*"
+            ],
+            "js": [
+                "main.js"
+            ]
+        }
+    ]
+}
